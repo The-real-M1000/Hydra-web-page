@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Hydra Launcher</title>
+      <style>
+      body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #E0E0E0;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1E1E1E;
+  padding: 20px 40px;
+  border-bottom: 2px solid #333;
+}
+.header img {
+  max-width: 50px;
+  margin-right: 20px;
+}
+.header h1 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #E0E0E0;
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.nav a {
+  color: #B0B0B0;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.nav a:hover {
+  background-color: #333;
+  color: #E0E0E0;
+}
+.nav a:active {
+  background-color: #444;
+  color: #E0E0E0;
+}
+.section {
+  padding: 40px;
+  margin: 20px;
+  background-color: #1E1E1E;
+  border-radius: 10px;
+}
+.section h2 {
+  font-size: 1.6em;
+  color: #E0E0E0;
+}
+.section p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.carousel .slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel .slides img {
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+.carousel .arrow {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  border: none;
+  color: #E0E0E0;
+  font-size: 1.5em;
+  cursor: pointer;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+.carousel .arrow.left {
+  left: 10px;
+}
+.carousel .arrow.right {
+  right: 10px;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  color: #E0E0E0;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+.button:hover {
+  background-color: #444;
+  color: #E0E0E0;
+}
+.button:active {
+  background-color: #555;
+  color: #E0E0E0;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+  .header img {
+    margin-right: 0;
+    margin-bottom: 10px;
+    max-width: 40px;
+  }
+  .nav {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .nav a {
+    margin: 5px 0;
+  }
+  .section {
+    padding: 20px;
+    margin: 10px;
+  }
+  .carousel .slides img {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+     </style>
+   </head>
+   <body>
+      <div class="header">
+         <div class="nav">
+            <a href="#home">Inicio</a>
+            <a href="#que-es">¿Qué es?</a>
+            <a href="#planes-futuro">Nuestros Planes</a>
+         </div>
+         <h1><img src="https://github.com/hydralauncher/hydra/raw/main/resources/icon.png" alt="Logo de Hydra Launcher"> Hydra Launcher</h1>
+         <div class="nav">
+            <a href="#links-hydra">Juegos gratis</a>
+            <a href="#descargar">Descargar</a>
+            <a href="#changelog">Changelogs</a>
+         </div>
+      </div>
+      <div class="section" id="home">
+         <h2>Bienvenido a Hydra Launcher</h2>
+         <p>Hydra Launcher es una plataforma avanzada para gestionar y lanzar tus videojuegos favoritos. Con su propio cliente BitTorrent incorporado, te permite descargar todos los juegos de manera rápida y GRATUITA. Disfruta de una experiencia de juego sin igual con Hydra Launcher, donde la simplicidad y la eficiencia se unen para ofrecerte lo mejor en entretenimiento digital.</p>
+         <div class="carousel">
+            <div class="slides">
+               <img src="https://hydra-launcher.gitbook.io/~gitbook/image?url=https%3A%2F%2F2594031055-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FhAA2l7RYfFb3AdvqTg2a%252Fuploads%252FVHLQQO416G1YkDTgasho%252F6b702e5a-405d-4892-bbb2-bd7a9dc14a63.jpeg%3Falt%3Dmedia%26token%3De40b8a59-42f8-4387-84a8-8b8a456cba31&width=768&dpr=3&quality=100&sign=e45e9c4d&sv=1" alt="Imagen de Hydra Launcher 1">
+               <img src="https://hydra-launcher.gitbook.io/~gitbook/image?url=https%3A%2F%2F2594031055-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FhAA2l7RYfFb3AdvqTg2a%252Fuploads%252FDwKnqeyymWHRPpXhbKX7%252Fimage.png%3Falt%3Dmedia%26token%3D5c7badbe-5104-4aa4-8c8e-b239c46f5118&width=768&dpr=3&quality=100&sign=bf6102ce&sv=1" alt="Imagen de Hydra Launcher 2">
+               <img src="https://hydra-launcher.gitbook.io/~gitbook/image?url=https%3A%2F%2F2594031055-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FhAA2l7RYfFb3AdvqTg2a%252Fuploads%252F1C7hXsuQNUylDwjNKlMY%252Fimage.png%3Falt%3Dmedia%26token%3Db8a24eee-dd08-4e9a-a9eb-f6a486160150&width=768&dpr=3&quality=100&sign=c2a70b0b&sv=1" alt="Imagen de Hydra Launcher 3">
+               <img src="https://hydra-launcher.gitbook.io/~gitbook/image?url=https%3A%2F%2F2594031055-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FhAA2l7RYfFb3AdvqTg2a%252Fuploads%252FpmcAwfrNriuPI7egLv5h%252Fimage.png%3Falt%3Dmedia%26token%3D1792d511-5ab9-4443-a8f1-589da1057dfc&width=768&dpr=3&quality=100&sign=d94c419b&sv=1" alt="Imagen de Hydra Launcher 4">
+               <img src="https://hydra-launcher.gitbook.io/~gitbook/image?url=https%3A%2F%2F2594031055-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FhAA2l7RYfFb3AdvqTg2a%252Fuploads%252FpAKKY3qZVXXgIn32Kym5%252Fimage.png%3Falt%3Dmedia%26token%3D2d8feee8-d8f7-4047-86fc-d1f11e72ee77&width=768&dpr=3&quality=100&sign=64d11409&sv=1" alt="Imagen de Hydra Launcher 5">
+               <img src="https://hydra-launcher.gitbook.io/~gitbook/image?url=https%3A%2F%2F2594031055-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FhAA2l7RYfFb3AdvqTg2a%252Fuploads%252FAuIji9PTnVzEde8Xogmg%252FGravando%25202024-06-22%2520150139.gif%3Falt%3Dmedia%26token%3D83b51032-7bf1-47e9-bfd9-27ff7871b89e&width=768&dpr=3&quality=100&sign=cd159ebf&sv=1" alt="Imagen de Hydra Launcher 6">
+            </div>
+            <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+         </div>
+      </div>
+      <div class="section" id="que-es">
+         <h2>¿Qué es Hydra Launcher?</h2>
+         <p>Hydra Launcher es una herramienta de gestión de videojuegos que te permite DESCARGAR y organizar tus juegos favoritos de manera GRATUITA. Con una interfaz intuitiva, Hydra Launcher ofrece una forma sencilla de acceder a una amplia selección de títulos para una experiencia de juego optimizada.<br>
+               <br>A continuacion una lista de funcionalidaes y caracteristicas:
+            </p>
+            <ul>
+               <li>Cliente BitTorrent integrado para descargas eficientes.</li>
+               <li>Integración con How Long To Beat (HLTB) en la página de cada juego.</li>
+               <li>Personalización del camino de descargas según tus preferencias.</li>
+               <li>Compatible con Windows y Linux.</li>
+               <li>Actualizaciones constantes para ofrecer siempre lo último.</li>
+               <li>Ver tu actividad reciente.</li>
+               <li>Ver todos tus juegos en una cuadrícula.</li>
+               <li>Cambiar tu foto de perfil y nombre de usuario.</li>
+               <li>Sincronizar tus juegos con la nube, lo que nos lleva a la próxima gran novedad.</li>
+            </ul>
+      </div>
+      <div class="section" id="planes-futuro">
+         <h2>Nuestros Planes para el Futuro</h2>
+         <ul>
+            <li>Logros (¡sí, lo leíste bien!)</li>
+            <li>Guardado en la nube/sincronización</li>
+            <li>Agregar amigos y visitar perfiles de otros jugadores</li>
+            <li>Agregar soporte a más bibliotecas además de Steam (como juegos retro)</li>
+         </ul>
+      </div>
+      <div class="section" id="links-hydra">
+         <h2>Links para Hydra</h2>
+         <p>Encuentra enlaces a tus juegos favoritos completamente GRATIS aquí:</p>
+         <a href="https://hydralinks.cloud/" class="button" target="_blank">Juegos para Hydra launcher</a>
+      </div>
+      <div class="section" id="descargar">
+         <h2>Descargar</h2>
+         <p>Puedes descargar Hydra Launcher desde el siguiente enlace:</p>
+         <a href="https://github.com/hydralauncher/hydra" class="button" target="_blank">Descargar Hydra Launcher</a>
+      </div>
+      <div class="section" id="changelog">
+         <h2>Changelogs</h2>
+         <p>Encuentra informacion acerca de las nuevas actualizaciones de Hydra launche aqui:</p>
+         <a href="https://hydra-launcher.gitbook.io/hydra" class="button" target="_blank">Changelog</a>
+      </div>
+      <script>
+         let index = 0;
+         
+         function moveSlide(step) {
+             const slides = document.querySelector('.slides');
+             const totalSlides = slides.children.length;
+             const slideWidth = slides.children[0].offsetWidth;
+             
+             index = (index + step + totalSlides) % totalSlides;
+             slides.style.transform = `translateX(${-index * slideWidth}px)`;
+         }
+         
+         document.addEventListener('DOMContentLoaded', () => {
+             const slides = document.querySelector('.slides');
+             slides.style.transform = `translateX(${-index * 33.33}%)`;
+         });
+      </script>
+   </body>
+</html>
